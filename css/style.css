@@ -17,21 +17,21 @@
        url('../fonts/old-standard-tt-v13-latin_cyrillic-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-html{
-   overflow-x: hidden;
-}
 
 body { 
 	background: url(../img/fone2.png); 
 	margin: 0;
 	padding: 0;
+    margin: 0 15px;
+    margin-top: 180px;
+    
 }
 a{
     text-decoration: none;
 }
 
 h1{
-    margin-top: 150px;
+    margin-top: 200px;
     margin-bottom: 90px;
     font-family: Old Standard TT;
     font-size: 6vw;
@@ -187,12 +187,12 @@ h1::before {
     width: 100%;
 }
 
-.textHistory, .textFacrs, .textDiscipline, .textNews, .header-h1, .history_block_1_text, .history_block_2_text, .history_block_3_text, .history_block_4_text,. history_block_5_text, .history_block_6_text, .disciplines_text, .disciplines_block_1_text, .disciplines_block_2_text, .disciplines_block_3_text, .disciplines_block_4_text, .disciplines_block_5_text, .news_block_1_text, .news_block_2_text, .news_block_3_text, .news_block_4_text, .facts_block_1_text, .facts_block_2_text, .facts_block_3_text, .facts_block_4_text, .facts_block_5_text{
+.textHistory, .textFacrs, .textDiscipline, .textNews, .header-h1 {
     line-height: 60%;
     font-family: Old Standard TT;
     font-style: normal;
     font-weight: bold;
-    font-size: 1.7vw;
+    font-size: 1.8vw;
     line-height: 2.3vw;
     text-align: center;
     font-variant: small-caps;
@@ -202,6 +202,13 @@ h1::before {
 }
 
 .history_block_1_text, .history_block_2_text, .history_block_3_text, .history_block_4_text, .history_block_5_text, .history_block_6_text, .disciplines_text, .disciplines_block_1_text, .disciplines_block_2_text, .disciplines_block_3_text, .disciplines_block_4_text, .disciplines_block_5_text, .news_block_1_text, .news_block_2_text, .news_block_3_text, .news_block_4_text, .facts_block_1_text, .facts_block_2_text, .facts_block_3_text, .facts_block_4_text, .facts_block_5_text{
+    font-family: Old Standard TT;
+    font-style: normal;
+    font-weight: bold; 
+    text-align: center;
+    font-variant: small-caps;
+    color: #414141;
+    letter-spacing: normal;    
     text-indent: 25px;
     font-size: 1.6vw;
     line-height: 2.6vw;
@@ -279,16 +286,12 @@ h2 {
 }
 
 .preloader {
-  /*фиксированное позиционирование*/
   position: fixed;
-  /* координаты положения */
   left: 0;
   top: 0;
   right: 0;
   bottom: 0;
-  /* фоновый цвет элемента */
   background: #e0e0e0;
-  /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
   z-index: 1001;
 }
 
