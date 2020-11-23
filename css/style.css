@@ -22,7 +22,6 @@ body {
 	background: url(../img/fone2.png); 
 	margin: 0;
 	padding: 0;
-    margin: 0 15px;
     margin-top: 180px;
     
 }
@@ -116,6 +115,7 @@ h1::before {
 
 
 .section{
+    margin: 0 15px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -352,7 +352,7 @@ h2 {
 }
 
 
-#footer {    
+#footer {
     text-align: center;
     margin-top: 50px;
     left: 0; bottom: 0;
