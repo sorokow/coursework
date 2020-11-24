@@ -19,10 +19,9 @@
 
 
 body { 
-	background: url(../img/fone2.png); 
+	background: url(../img/fone.jpg); 
 	margin: 0;
 	padding: 0;
-    margin-top: 180px;
     margin: 0 15px;
     
 }
@@ -41,7 +40,7 @@ h1{
     text-transform: uppercase;
     text-align: center;
     color: black;
-    text-shadow: black 0 0 .2vw;
+    text-shadow: #751616 0 0 1vw;
 }
 
 h1::before {
@@ -96,7 +95,7 @@ h1::before {
     height: 35px;
     padding:10px;
     position: absolute;    
-    background: #000000;
+    background: #751616;
     border-radius: 50px;
     text-align: center;
     line-height: 15px;
@@ -106,11 +105,11 @@ h1::before {
     font-size: 24px;
     line-height: 37px;
     font-variant: small-caps;
-    color: #FFFFFF;
+    color: #fff;
 }
 
 .rectangle1:hover, .rectangle2:hover, .rectangle3:hover, .rectangle4:hover, .rectangle5:hover {
-  background:#696969;
+  background:#470303;
 }
 
 
@@ -123,7 +122,7 @@ h1::before {
 
 .container_mainImg {
 	margin: 0 auto;
-    margin-top: 130px;
+    margin-top: calc(90px + 5vh);
     height: auto;
     max-width: calc(1310px + 2vw);
     text-align: center;
@@ -150,7 +149,7 @@ h1::before {
 	font-weight: 2vw;
 	font-stretch: ultra-expanded;
 	font-size: 10vw;
-	color: #d0d4ab;
+	color: #fff;
     text-shadow: black 0 0 3vw;
 
 }
@@ -163,7 +162,7 @@ h1::before {
     max-width: 1300px;
     border: 1vw solid #c4ba6000;
     outline: 2px solid #000;
-    background-color: #c4ba607a;
+    background-color: #c4ba6036;
 }
 
 .history_block_1, .history_block_2, .history_block_3, .history_block_4, .history_block_5, .history_block_6, .disciplines_block_1, .disciplines_block_2, .disciplines_block_3, .disciplines_block_4, .disciplines_block_5, .news_block_1, .news_block_2, .news_block_3, .news_block_4, .facts_block_1, .facts_block_2, .facts_block_3, .facts_block_4, .facts_block_5{
@@ -180,7 +179,7 @@ h1::before {
     max-width: 1300px;
     border: 1vw solid #c4ba6000;
     outline: 2px solid #000;
-    background-color: #c4ba607a;
+    background-color: #c4ba6036;
 }
 
 .left_col_c1 img,.rigth_col_c2 img, .left_col_c3 img, .rigth_col_c4 img{
@@ -191,9 +190,9 @@ h1::before {
     line-height: 60%;
     font-family: Old Standard TT;
     font-style: normal;
-    font-weight: bold;
-    font-size: 1.8vw;
-    line-height: 2.3vw;
+    font-weight: bolder;
+    font-size: 2.2vw;
+    line-height: 2.4vw;
     text-align: center;
     font-variant: small-caps;
     color: #414141;
@@ -219,30 +218,28 @@ h1::before {
 }
 
 .textHistory{
-    padding: 4% 10% 0 20%;
+    padding: 4% 4% 0 7%;
 }
 
 .textFacrs{
     max-width: 550px;
-    padding: 12% 20% 0 10%;
+    padding: 4% 8% 0 5%;
     vertical-align: middle;
     top:50%;
     }
 
 .textDiscipline{
-    padding: 4% 10% 0 15%;
+    padding: 2% 10% 0 15%;
     display: table-cell;
     vertical-align: middle
     max-width: 350px;
-    padding-top: 12%;
 }
 
 .textNews{
-    padding: 15% 20% 0 10%;
+    padding: 12% 10% 0 5%;
     display: table-cell;
     vertical-align: middle
     max-width: 350px;
-    padding-top: 10%;
 }
 
 
@@ -358,25 +355,39 @@ h2 {
     left: 0;
     bottom: 0;
     padding: 15px;
-    background: #000;
+    background: #751616;
     color: #fff;
+}
+
+@media screen and (max-width : 1050px) {
+    .history_block_1_text, .history_block_2_text, .history_block_3_text, .history_block_4_text, .history_block_5_text, .history_block_6_text, .disciplines_text, .disciplines_block_1_text, .disciplines_block_2_text, .disciplines_block_3_text, .disciplines_block_4_text, .disciplines_block_5_text, .news_block_1_text, .news_block_2_text, .news_block_3_text, .news_block_4_text, .facts_block_1_text, .facts_block_2_text, .facts_block_3_text, .facts_block_4_text, .facts_block_5_text{
+        font-size: 2vw;
+        line-height: 2.3vw;
+        font-weight: 900;
+    }
 }
 
 
 @media screen and (min-width : 1500px) {
     .textHistory, .textFacrs, .textDiscipline, .textNews, .header-h2{
-        font-size: 1.5vw;
-        line-height: 1.8vw;
-        font-weight: 1200;
+        font-size: 2vw;
+        line-height: 2vw;
+        font-weight: 900;
     }
 }
 
-@media screen and (min-width : 1770px) {
+@media screen and (min-width : 1750px) {
     .textHistory, .textFacrs, .textDiscipline, .textNews, .header-h2{
-        font-size: 1.5vw;
-        line-height: 1.9vw;
-        font-weight: 1200;
+        font-size: 1.8vw;
+        line-height: 2vw;
+        font-weight: 900;
+        padding: 5% 5% 0 5%;
     }
+    
+    .textNews{
+        padding-top: 12%;
+    }
+    
     .conteiner1, .conteiner2, .conteiner3, .conteiner4{
         max-width: 1500px;
     }
